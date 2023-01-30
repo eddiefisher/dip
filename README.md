@@ -56,7 +56,9 @@ After that, it will be automatically applied when you open your preferred termin
 ## Installation
 
 ```sh
-gem install dip
+# gem install dip
+gem install specific_install
+gem specific_install https://github.com/eddiefisher/dip
 ```
 
 The compiled binary is no more provided since version 7, because of new version of [Ruby Packer](https://github.com/pmq20/ruby-packer) not released for a long time with recent Ruby version. Also there was a lot of work to prepare each release of Dip for MacOS version.
