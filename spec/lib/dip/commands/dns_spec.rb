@@ -13,7 +13,7 @@ describe Dip::Commands::DNS do
     let(:name) { "--name dnsdock" }
     let(:domain) { "--domain=docker" }
     let(:port) { "--publish 53/udp" }
-    let(:image) { "aacebedo/dnsdock:latest-amd64" }
+    let(:image) { "eddifisher/dnsdock:latest" }
     let(:cmd) { "run --detach #{volume} --restart always #{port} #{net} #{name} #{image} #{domain}" }
 
     context "when without arguments" do

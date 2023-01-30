@@ -406,7 +406,7 @@ dip nginx up -p 80:80 443:443
 
 ### dip dns
 
-Runs a DNS server container based on https://github.com/aacebedo/dnsdock. It is used for container to container requests through Nginx. An application's docker-compose.yml should define `dns` configuration with environment variable `$DIP_DNS` and connect to external network `frontend`. `$DIP_DNS` will be automatically assigned by dip.
+Runs a DNS server container based on (https://github.com/aacebedo/dnsdock) forked to https://github.com/eddiefisher/dnsdock. It is used for container to container requests through Nginx. An application's docker-compose.yml should define `dns` configuration with environment variable `$DIP_DNS` and connect to external network `frontend`. `$DIP_DNS` will be automatically assigned by dip.
 
 ```sh
 dip dns up

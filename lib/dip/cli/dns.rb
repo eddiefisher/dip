@@ -6,7 +6,7 @@ require_relative "../commands/dns"
 
 module Dip
   class CLI
-    # See more https://github.com/aacebedo/dnsdock
+    # See more https://github.com/eddiefisher/dnsdock
     class DNS < Base
       desc "up", "Run dnsdock container"
       method_option :help, aliases: "-h", type: :boolean,
@@ -19,7 +19,7 @@ module Dip
         desc: "Container network name"
       method_option :publish, aliases: "-p", type: :string, default: "53/udp",
         desc: "Container port"
-      method_option :image, aliases: "-i", type: :string, default: "aacebedo/dnsdock:latest-amd64",
+      method_option :image, aliases: "-i", type: :string, default: "eddifisher/dnsdock:latest",
         desc: "Docker image name"
       method_option :domain, aliases: "-d", type: :string, default: "docker",
         desc: "Top level domain"
